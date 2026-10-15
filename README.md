@@ -2,7 +2,7 @@
 
 Fastify (Node.js) implementation of the Heroes CRUD API used in the [Heroes shootout](https://github.com/sean3z/heroes-shootout) (crocket vs Rocket vs Spring Boot vs Fastify), behind the post *Where the cycles go: C++26, Rust, Java and Node on one CRUD API*.
 
-Fastify 5 with JSON-schema serialization, node-postgres and prom-client. `server.js` is the single-process app benchmarked; `cluster.js` forks `WORKERS` processes (used only in the run-1 side experiment).
+Fastify 5 with JSON-schema serialization, node-postgres and prom-client. `server.js` is the single-process app benchmarked; `cluster.js` forks `WORKERS` processes if you want a multi-process experiment.
 
 ## API contract (identical across all four apps)
 
